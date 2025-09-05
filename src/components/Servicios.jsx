@@ -20,6 +20,7 @@ export default function Servicios() {
             <div style={{ position: "relative", width: "100%" }}>
               {/* Ícono */}
               <div
+                className="float-pulse"
                 style={{
                   width: "80px",
                   height: "80px",
@@ -34,7 +35,8 @@ export default function Servicios() {
                   left: "0",
                   right: "0",
                   zIndex: 2,
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                  animationDelay: "0s"
                 }}
               >
                 <FaMobileAlt size={32} color="#161212" />
@@ -63,6 +65,7 @@ export default function Servicios() {
           <Col md={6} lg={3} className="d-flex">
             <div style={{ position: "relative", width: "100%" }}>
               <div
+                className="float-pulse"
                 style={{
                   width: "80px",
                   height: "80px",
@@ -77,7 +80,8 @@ export default function Servicios() {
                   left: "0",
                   right: "0",
                   zIndex: 2,
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                  animationDelay: "0.15s"
                 }}
               >
                 <FaCameraRetro size={32} color="#161212" />
@@ -104,6 +108,7 @@ export default function Servicios() {
           <Col md={6} lg={3} className="d-flex">
             <div style={{ position: "relative", width: "100%" }}>
               <div
+                className="float-pulse"
                 style={{
                   width: "80px",
                   height: "80px",
@@ -118,7 +123,8 @@ export default function Servicios() {
                   left: "0",
                   right: "0",
                   zIndex: 2,
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                  animationDelay: "0.30s"
                 }}
               >
                 <FaVideo size={32} color="#161212" />
@@ -145,6 +151,7 @@ export default function Servicios() {
           <Col md={6} lg={3} className="d-flex">
             <div style={{ position: "relative", width: "100%" }}>
               <div
+                className="float-pulse"
                 style={{
                   width: "80px",
                   height: "80px",
@@ -159,7 +166,8 @@ export default function Servicios() {
                   left: "0",
                   right: "0",
                   zIndex: 2,
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                  animationDelay: "0.45s"
                 }}
               >
                 <FaBullhorn size={32} color="#161212" />

@@ -5,12 +5,12 @@ import { FaLightbulb, FaPenNib, FaShareAlt, FaChartLine } from "react-icons/fa"
 
 export default function Proceso() {
   const pasos = [
-    { icon: <FaLightbulb size={28} color="#161212" />, titulo: "Planificación" },
+    { icon: <FaLightbulb size={28} color="#161212" />, titulo: "Planificación"},
     { icon: <FaPenNib size={28} color="#161212" />, titulo: "Creación" },
     { icon: <FaShareAlt size={28} color="#161212" />, titulo: "Publicación" },
     { icon: <FaChartLine size={28} color="#161212" />, titulo: "Resultados" }
   ]
-
+  const delays = ["-0s", "-0.15s", "-0.30s", "-0.45s"]
   return (
     <section id="proceso" style={{ backgroundColor: "#fff", padding: "120px 20px" }}>
       <Container>
@@ -24,6 +24,7 @@ export default function Proceso() {
               <div style={{ position: "relative", zIndex: 2 }}>
                 {/* Círculo con ícono */}
                 <div
+                className="float-pulse"
                   style={{
                     width: "70px",
                     height: "70px",
@@ -35,7 +36,8 @@ export default function Proceso() {
                     margin: "0 auto 20px",
                     boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
                     position: "relative",
-                    zIndex: 2
+                    zIndex: 2,
+                    animationDelay: delays[i]
                   }}
                 >
                   {paso.icon}

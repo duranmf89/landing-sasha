@@ -1,3 +1,15 @@
 html {
     scroll-behavior: smooth;
   }
+  /* Flote + pulso sutil para los círculos de ícono */
+@media (prefers-reduced-motion: no-preference) {
+    .float-pulse {
+      animation: pulseFloat 2s ease-in-out infinite;
+      will-change: transform;
+    }
+  
+    @keyframes pulseFloat {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50%      { transform: translateY(-6px) scale(1.1); }
+    }
+  }
