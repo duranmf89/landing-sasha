@@ -11,7 +11,7 @@ export default function Hero() {
       {/* --- MOBILE: video (solo < md) --- */}
       <div
         className="d-flex d-md-none position-relative"
-        style={{ height: '90vh', minHeight: 420, backgroundColor: '#000' }}
+        style={{ height: '95vh', minHeight: 420, backgroundColor: '#000' }}
       >
         <video
           autoPlay
@@ -26,7 +26,6 @@ export default function Hero() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            objectPosition: 'center 80%', // 👈 recorta más arriba en MOBILE
           }}
         >
           {/* WebM opcional (mejor compresión en Chrome/Android) */}
