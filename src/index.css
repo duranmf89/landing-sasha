@@ -13,3 +13,40 @@ html {
       50%      { transform: translateY(-6px) scale(1.1); }
     }
   }
+
+/* === Tape / Marquee === */
+.tape {
+  background: #161212;          /* 👈 tu color */
+  color: #f2f2f2;
+  overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+.tape__track {
+  display: flex;
+  width: max-content;
+  animation: tape-marquee 100s linear infinite;
+}
+
+.tape__text {
+  display: inline-block;
+  padding: 24px 0;             /* “altura” de cinta */
+  white-space: nowrap;
+  font-family: "WIX-RG", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  opacity: 0.95;
+}
+
+/* movimiento continuo */
+@keyframes tape-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* accesibilidad: si el usuario prefiere menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .tape__track { animation: none; }
+}

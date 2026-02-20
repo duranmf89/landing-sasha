@@ -1,3 +1,5 @@
+//src/components/Hero.jsx
+
 import Container from 'react-bootstrap/Container'
 
 export default function Hero() {
@@ -41,14 +43,28 @@ export default function Hero() {
         </Container>
       </div>
 
-      {/* --- TABLET/DESKTOP: Hero estático (>= md) --- */}
-      <div className="d-none d-md-flex bg-dark text-light text-center flex-column justify-content-center" style={{ height: 500 }}>
-        <Container>
-          <p className="text-uppercase small mb-3" style={{ letterSpacing: '2px' }}>
-            Mentes creativas, Trabajos creativos
-          </p>
-          <h1 className="fw-bold display-3">WE ARE DIGITAL</h1>
-        </Container>
+      {/* --- TABLET/DESKTOP: solo video (>= md) --- */}
+      <div
+        className="d-none d-md-flex position-relative"
+        style={{ height: "85vh", minHeight: 600, backgroundColor: "#000" }}
+      >
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
+        >
+          <source src={`${base}video/hero-desktop.webm`} type="video/webm" />
+          <source src={`${base}video/hero-desktop.mp4`} type="video/mp4" />
+        </video>
       </div>
     </section>
   )

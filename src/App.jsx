@@ -7,12 +7,14 @@ import CTA from "./components/CTA"
 import Contacto from "./components/Contacto"
 import Footer from "./components/Footer"
 import ScrollTopButton from "./components/ScrollTopButton"
+import Tape from "./components/Tape";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
+      <Tape />
       <About />
       <Servicios />
       <Proceso />

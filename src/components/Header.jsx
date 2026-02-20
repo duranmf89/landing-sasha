@@ -31,7 +31,7 @@ export default function Header() {
           }}
           className="fs-4"
         >
-          SASHA
+          SASH
         </Navbar.Brand>
 
         {/* Botón hamburguesa */}
