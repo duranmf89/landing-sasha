@@ -11,7 +11,7 @@ export default function Hero() {
       {/* --- MOBILE: video (solo < md) --- */}
       <div
         className="d-flex d-md-none position-relative"
-        style={{ height: '100vh', minHeight: 420, backgroundColor: '#000' }}
+        style={{ height: '90vh', minHeight: 420, backgroundColor: '#000' }}
       >
         <video
           autoPlay
@@ -20,7 +20,14 @@ export default function Hero() {
           playsInline
           poster={`${base}video/hero-mobile-poster.jpg`}
           preload="metadata"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'center 80%', // 👈 recorta más arriba en MOBILE
+          }}
         >
           {/* WebM opcional (mejor compresión en Chrome/Android) */}
           <source src={`${base}video/hero-mobile.webm`} type="video/webm" />
@@ -59,7 +66,7 @@ export default function Hero() {
             inset: 0,
             width: "100%",
             height: "100%",
-            objectFit: "cover",
+            objectFit: "cover"
           }}
         >
           <source src={`${base}video/hero-desktop.webm`} type="video/webm" />
